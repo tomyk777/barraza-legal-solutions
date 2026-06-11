@@ -71,7 +71,7 @@ function Header() {
           <img src={logoAsset} alt="Estudio Jurídico Barraza" className="h-12 w-auto object-contain" height={48} />
           <div className="leading-tight">
             <p className="font-display text-lg font-semibold text-navy-deep">Estudio Jurídico Barraza</p>
-            <p className="text-[11px] tracking-[0.18em] text-muted-foreground uppercase">& Asociados</p>
+            <p className="text-[11px] tracking-[0.18em] text-muted-foreground ">& Asociados</p>
           </div>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-navy md:flex">
@@ -83,18 +83,18 @@ function Header() {
         <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hidden rounded-sm border border-navy bg-navy px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary-foreground transition hover:bg-navy-deep md:inline-block">
           Consulta
         </a>
-        <button aria-label="Menú" className="text-navy md:hidden" onClick={() => setOpen(!open)}>
+        <button aria-label="Menú" className="text-navy md:hidden hover:text-gold active:scale-95 transition-all" onClick={() => setOpen(!open)}>
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
         </button>
       </div>
       {open && (
         <div className="border-t border-border bg-background md:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-5 text-navy">
-            <a href="#nosotros" onClick={() => setOpen(false)}>El Estudio</a>
-            <a href="#VerServicios" onClick={() => setOpen(false)}>Áreas de Práctica</a>
-            <a href="#pasos" onClick={() => setOpen(false)}>Proceso</a>
-            <a href="#contacto" onClick={() => setOpen(false)}>Contacto</a>
-            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-navy px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.15em] text-primary-foreground">Solicitar consulta</a>
+          <nav className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-5 text-navy text-sm font-medium">
+            <a href="#nosotros" className="border-b border-border/40 pb-2 transition-colors hover:text-gold active:text-gold/85" onClick={() => setOpen(false)}>El Estudio</a>
+            <a href="#VerServicios" className="border-b border-border/40 pb-2 transition-colors hover:text-gold active:text-gold/85" onClick={() => setOpen(false)}>Áreas de Práctica</a>
+            <a href="#pasos" className="border-b border-border/40 pb-2 transition-colors hover:text-gold active:text-gold/85" onClick={() => setOpen(false)}>Proceso</a>
+            <a href="#contacto" className="border-b border-border/40 pb-2 transition-colors hover:text-gold active:text-gold/85" onClick={() => setOpen(false)}>Contacto</a>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-navy px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.15em] text-primary-foreground transition-colors hover:bg-navy-deep active:bg-navy-deep/95">Solicitar consulta</a>
           </nav>
         </div>
       )}
@@ -207,61 +207,61 @@ function Nosotros() {
       </div>
 
       <div className="mx-auto mt-16 grid max-w-7xl gap-8 px-5 sm:grid-cols-3 lg:px-10">
-        <div className="relative overflow-hidden rounded-md border border-navy/10 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elegant hover:border-gold/30 group">
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/55 via-gold to-gold/55 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+        <div className="relative overflow-hidden rounded-md border border-navy/10 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elegant hover:border-gold/30 active:-translate-y-1.5 active:shadow-elegant active:border-gold/30 group">
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/55 via-gold to-gold/55 transform scale-x-0 group-hover:scale-x-100 group-active:scale-x-100 transition-transform duration-500 origin-left" />
           
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-navy/5 text-navy group-hover:bg-gold/15 group-hover:text-navy-deep transition-all duration-300">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-navy/5 text-navy group-hover:bg-gold/15 group-active:bg-gold/15 group-hover:text-navy-deep group-active:text-navy-deep transition-all duration-300">
               <History className="h-6 w-6 stroke-[1.5]" />
             </div>
             <h3 className="font-display text-2xl font-bold text-navy-deep">Historia</h3>
           </div>
           
-          <div className="mt-4 mb-3 h-[1px] w-12 bg-gold/60 group-hover:w-20 transition-all duration-500" />
+          <div className="mt-4 mb-3 h-[1px] w-12 bg-gold/60 group-hover:w-20 group-active:w-20 transition-all duration-500" />
           
           <p className="text-sm leading-relaxed text-foreground/80">
             Nació en 2006 cuando el Dr. Mariano Barraza, egresado de la Universidad Nacional de Mar del Plata, se radicó en Lobería, proyectándose con el tiempo hacia el Sudeste de la Provincia de Buenos Aires.
           </p>
           
-          <History className="absolute -right-6 -bottom-6 h-28 w-28 text-navy-deep opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 transition-all duration-500 pointer-events-none" />
+          <History className="absolute -right-6 -bottom-6 h-28 w-28 text-navy-deep opacity-[0.02] group-hover:opacity-[0.05] group-active:opacity-[0.05] group-hover:scale-110 group-active:scale-110 transition-all duration-500 pointer-events-none" />
         </div>
 
-        <div className="relative overflow-hidden rounded-md border border-navy/10 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elegant hover:border-gold/30 group">
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/55 via-gold to-gold/55 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+        <div className="relative overflow-hidden rounded-md border border-navy/10 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elegant hover:border-gold/30 active:-translate-y-1.5 active:shadow-elegant active:border-gold/30 group">
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/55 via-gold to-gold/55 transform scale-x-0 group-hover:scale-x-100 group-active:scale-x-100 transition-transform duration-500 origin-left" />
           
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-navy/5 text-navy group-hover:bg-gold/15 group-hover:text-navy-deep transition-all duration-300">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-navy/5 text-navy group-hover:bg-gold/15 group-active:bg-gold/15 group-hover:text-navy-deep group-active:text-navy-deep transition-all duration-300">
               <Target className="h-6 w-6 stroke-[1.5]" />
             </div>
             <h3 className="font-display text-2xl font-bold text-navy-deep">Visión</h3>
           </div>
           
-          <div className="mt-4 mb-3 h-[1px] w-12 bg-gold/60 group-hover:w-20 transition-all duration-500" />
+          <div className="mt-4 mb-3 h-[1px] w-12 bg-gold/60 group-hover:w-20 group-active:w-20 transition-all duration-500" />
           
           <p className="text-sm leading-relaxed text-foreground/80">
             Ser un aliado estratégico de particulares, trabajadores and empresas, ofreciendo la seguridad jurídica y experiencia que los nuevos tiempos requieren.
           </p>
           
-          <Target className="absolute -right-6 -bottom-6 h-28 w-28 text-navy-deep opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 transition-all duration-500 pointer-events-none" />
+          <Target className="absolute -right-6 -bottom-6 h-28 w-28 text-navy-deep opacity-[0.02] group-hover:opacity-[0.05] group-active:opacity-[0.05] group-hover:scale-110 group-active:scale-110 transition-all duration-500 pointer-events-none" />
         </div>
 
-        <div className="relative overflow-hidden rounded-md border border-navy/10 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elegant hover:border-gold/30 group">
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/55 via-gold to-gold/55 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+        <div className="relative overflow-hidden rounded-md border border-navy/10 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elegant hover:border-gold/30 active:-translate-y-1.5 active:shadow-elegant active:border-gold/30 group">
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/55 via-gold to-gold/55 transform scale-x-0 group-hover:scale-x-100 group-active:scale-x-100 transition-transform duration-500 origin-left" />
           
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-navy/5 text-navy group-hover:bg-gold/15 group-hover:text-navy-deep transition-all duration-300">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-navy/5 text-navy group-hover:bg-gold/15 group-active:bg-gold/15 group-hover:text-navy-deep group-active:text-navy-deep transition-all duration-300">
               <Scale className="h-6 w-6 stroke-[1.5]" />
             </div>
             <h3 className="font-display text-2xl font-bold text-navy-deep">Enfoque</h3>
           </div>
           
-          <div className="mt-4 mb-3 h-[1px] w-12 bg-gold/60 group-hover:w-20 transition-all duration-500" />
+          <div className="mt-4 mb-3 h-[1px] w-12 bg-gold/60 group-hover:w-20 group-active:w-20 transition-all duration-500" />
           
           <p className="text-sm leading-relaxed text-foreground/80">
             Transformamos la complejidad legal del caso en un proceso claro, seguro y ágil.
           </p>
           
-          <Scale className="absolute -right-6 -bottom-6 h-28 w-28 text-navy-deep opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 transition-all duration-500 pointer-events-none" />
+          <Scale className="absolute -right-6 -bottom-6 h-28 w-28 text-navy-deep opacity-[0.02] group-hover:opacity-[0.05] group-active:opacity-[0.05] group-hover:scale-110 group-active:scale-110 transition-all duration-500 pointer-events-none" />
         </div>
       </div>
     </section>
@@ -285,7 +285,7 @@ function Servicios() {
 
         <div className="mt-14 grid gap-px overflow-hidden bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => (
-            <article key={s.title} className="group relative bg-navy-deep p-7 transition-colors hover:bg-navy">
+            <article key={s.title} className="group relative bg-navy-deep p-7 transition-colors hover:bg-navy active:bg-navy">
               <p className="font-display text-5xl text-gold/30">{String(i + 1).padStart(2, "0")}</p>
               <h3 className="mt-3 font-display text-2xl text-white">{s.title}</h3>
               <div className="mt-3 h-px w-10 bg-gold" />
@@ -314,10 +314,10 @@ function Pasos() {
           </div>
           <ol className="space-y-6 lg:col-span-8">
             {steps.map((s) => (
-              <li key={s.n} className="flex gap-6 border-l-2 border-navy/20 bg-background p-6 shadow-soft transition hover:border-gold">
-                <span className="font-display text-4xl text-gold">{s.n}</span>
+              <li key={s.n} className="group flex gap-6 border-l-3 border-navy/20 bg-background p-6 shadow-soft transition-all duration-300 hover:translate-x-2 hover:border-gold hover:shadow-md hover:bg-white active:translate-x-2 active:border-gold active:shadow-md active:bg-white">
+                <span className="font-display text-4xl text-gold/60 group-hover:text-gold group-active:text-gold transition-all duration-300 transform group-hover:scale-110 group-active:scale-110">{s.n}</span>
                 <div>
-                  <h3 className="font-display text-xl text-navy-deep">{s.title}</h3>
+                  <h3 className="font-display text-xl text-navy-deep group-hover:text-navy group-active:text-navy transition-colors duration-300">{s.title}</h3>
                   <p className="mt-1 text-sm text-foreground/70">{s.text}</p>
                 </div>
               </li>
@@ -350,18 +350,22 @@ function Contacto() {
             <p className="mt-6 text-foreground/75">
               Respondemos cada consulta de forma directa. Escribinos por WhatsApp o completá el formulario.
             </p>
-            <ul className="mt-10 space-y-6">
-              <li className="border-l-2 border-navy/40 pl-4">
-                <p className="text-xs uppercase tracking-[0.2em] text-navy">Teléfono / WhatsApp</p>
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="font-display text-2xl text-navy-deep hover:text-navy">2262-477807</a>
+            <ul className="mt-10 space-y-4">
+              <li className="group relative rounded-sm border-l-2 border-navy/25 pl-4 py-2 pr-4 transition-all duration-300 hover:border-navy hover:bg-navy/5 hover:translate-x-1">
+                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="block">
+                  <p className="text-xs uppercase tracking-[0.2em] text-navy/70 group-hover:text-navy transition-colors duration-300">Teléfono / WhatsApp</p>
+                  <p className="font-display text-2xl text-navy-deep mt-1 transition-colors duration-300 group-hover:text-navy-soft">2262-477807</p>
+                </a>
               </li>
-              <li className="border-l-2 border-navy/40 pl-4">
-                <p className="text-xs uppercase tracking-[0.2em] text-navy">Email</p>
-                <a href="mailto:marbarraza@gmail.com" className="font-display text-xl text-navy-deep hover:text-navy break-all">marbarraza@gmail.com</a>
+              <li className="group relative rounded-sm border-l-2 border-navy/25 pl-4 py-2 pr-4 transition-all duration-300 hover:border-navy hover:bg-navy/5 hover:translate-x-1">
+                <a href="mailto:marbarraza@gmail.com" className="block">
+                  <p className="text-xs uppercase tracking-[0.2em] text-navy/70 group-hover:text-navy transition-colors duration-300">Email</p>
+                  <p className="font-display text-xl text-navy-deep mt-1 transition-colors duration-300 group-hover:text-navy-soft break-all">marbarraza@gmail.com</p>
+                </a>
               </li>
-              <li className="border-l-2 border-navy/40 pl-4">
-                <p className="text-xs uppercase tracking-[0.2em] text-navy">Zona de actuación</p>
-                <p className="text-foreground/80">Mar del Plata · Tandil · Necochea · Costa Atlántica</p>
+              <li className="relative rounded-sm border-l-2 border-navy/25 pl-4 py-2 pr-4 transition-all duration-300">
+                <p className="text-xs uppercase tracking-[0.2em] text-navy/70">Zona de actuación</p>
+                <p className="mt-1 text-sm text-foreground/80">Mar del Plata · Tandil · Necochea · Costa Atlántica</p>
               </li>
             </ul>
           </div>
@@ -397,29 +401,61 @@ function Field({ label, value, onChange, type = "text" }: { label: string; value
 
 function Footer() {
   return (
-    <footer className="bg-ink py-14 text-bone/80">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-3 lg:px-10">
-        <div className="flex items-center gap-4">
-          <img src={logoAsset} alt="" className="h-14 w-14 rounded-full object-cover" width={56} height={56} />
-          <div>
-            <p className="font-display text-xl text-white">Estudio Jurídico Barraza</p>
-            <p className="text-xs uppercase tracking-[0.2em] text-bone/60">& Asociados</p>
+    <footer className="bg-ink py-16 text-bone/80">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
+        <div>
+          <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-white p-1.5 shadow-sm">
+              <img src={logoAsset} alt="Estudio Jurídico Barraza" className="h-full w-auto object-contain" />
+            </div>
+            <div>
+              <p className="font-display text-xl text-white leading-tight">Estudio Jurídico Barraza</p>
+              <p className="text-xs tracking-[0.2em] text-bone/60">& Asociados</p>
+            </div>
           </div>
+          <p className="mt-4 text-xs leading-relaxed text-bone/50 max-w-xs">
+            Asesoramiento profesional y soluciones legales dinámicas en el Sudeste bonaerense con más de 20 años de trayectoria.
+          </p>
         </div>
+        
         <div className="text-sm">
-          <p className="text-xs uppercase tracking-[0.2em] text-gold">Contacto</p>
-          <p className="mt-2">WhatsApp: <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hover:text-gold">2262-477807</a></p>
-          <p>Email: <a href="mailto:marbarraza@gmail.com" className="hover:text-gold">marbarraza@gmail.com</a></p>
+          <p className="text-xs uppercase tracking-[0.2em] text-gold mb-4">Navegación</p>
+          <ul className="space-y-2.5">
+            <li>
+              <a href="#nosotros" className="transition-colors hover:text-gold">El Estudio</a>
+            </li>
+            <li>
+              <a href="#VerServicios" className="transition-colors hover:text-gold">Áreas de Práctica</a>
+            </li>
+            <li>
+              <a href="#pasos" className="transition-colors hover:text-gold">Proceso de Trabajo</a>
+            </li>
+            <li>
+              <a href="#contacto" className="transition-colors hover:text-gold">Contacto</a>
+            </li>
+          </ul>
         </div>
+
         <div className="text-sm">
-          <p className="text-xs uppercase tracking-[0.2em] text-gold">Seguinos</p>
-          <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 hover:text-gold">
+          <p className="text-xs uppercase tracking-[0.2em] text-gold mb-4">Contacto</p>
+          <p className="mt-2">
+            WhatsApp: <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">2262-477807</a>
+          </p>
+          <p className="mt-1">
+            Email: <a href="mailto:marbarraza@gmail.com" className="hover:text-gold transition-colors break-all">marbarraza@gmail.com</a>
+          </p>
+        </div>
+
+        <div className="text-sm">
+          <p className="text-xs uppercase tracking-[0.2em] text-gold mb-4">Seguinos</p>
+          <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 hover:text-gold transition-colors">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>
             @estudiojuridicobarraza
           </a>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 px-5 pt-6 text-xs text-bone/50 lg:px-10">
+      
+      <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 px-5 pt-6 text-xs text-bone/50 lg:px-10">
         © {new Date().getFullYear()} Estudio Jurídico Barraza & Asociados. Todos los derechos reservados.
       </div>
     </footer>
