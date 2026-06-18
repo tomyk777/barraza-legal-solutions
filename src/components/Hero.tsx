@@ -15,26 +15,26 @@ export default function Hero() {
         fetchPriority="high"
       />
       <div className="absolute inset-0 bg-gradient-to-br from-navy-deep via-navy-deep/90 to-navy-deep/70" />
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-12 lg:gap-16 lg:px-10 lg:py-36">
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:py-24 lg:grid-cols-12 lg:gap-16 lg:px-10 lg:py-36">
         <div className="lg:col-span-8">
-          <p className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-gold font-semibold">
+          <p className="mb-3 sm:mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-gold font-semibold">
             <span className="h-px w-10 bg-gold" />
             Civil · Comercial · Laboral · Familia · Daños y Perjuicios
           </p>
-          <h1 className="font-display text-4xl leading-[1.05] text-white sm:text-5xl lg:text-[64px]">
+          <h1 className="font-display text-[1.85rem] leading-[1.08] text-white sm:text-5xl lg:text-[64px]">
             ¿Necesitás asesoramiento o tenés que resolver un conflicto legal?
           </h1>
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/85">
+          <p className="mt-4 sm:mt-7 max-w-2xl text-base sm:text-lg leading-relaxed text-white/85">
             No dejes pasar tu tiempo. Poné tu caso en manos de un Estudio Jurídico con
             <strong className="font-semibold text-white"> más de 20 años de trayectoria </strong>
             que te dan la seguridad y la respuesta directa que necesitás.
           </p>
-          <p className="mt-4 max-w-2xl text-base text-white/70">
+          <p className="mt-2 sm:mt-4 max-w-2xl text-[0.9rem] sm:text-base text-white/70">
             Dedicados al abordaje y resolución de asuntos civiles, comerciales, laborales, familia y
             daños y perjuicios.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3">
             <a
               href={WHATSAPP}
               target="_blank"
