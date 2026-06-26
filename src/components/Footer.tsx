@@ -107,9 +107,22 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 px-5 pt-6 text-xs text-bone/50 lg:px-10">
-        © {new Date().getFullYear()} Estudio Jurídico Barraza & Asociados. Todos los derechos
-        reservados.
+      <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 px-5 pt-6 text-xs text-bone/50 lg:px-10 flex flex-col md:flex-row md:justify-between gap-4">
+        <div>
+          © {new Date().getFullYear()} Estudio Jurídico Barraza & Asociados. Todos los derechos
+          reservados.
+        </div>
+        <div>
+          Desarrollado por{" "}
+          <a
+            href="https://www.linkedin.com/in/tom%C3%A1s-kreczmer-b5682a37a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-bone hover:text-gold transition-colors duration-200 font-medium"
+          >
+            Tomás Kreczmer
+          </a>
+        </div>
       </div>
     </footer>
   );
