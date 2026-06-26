@@ -36,4 +36,4 @@ Mar del Plata, Tandil, Necochea, Balcarce y Lobería, provincia de Buenos Aires,
 
 ## Páginas
 
-- [Inicio](https://estudiojuridicobarraza.vercel.app/): Página principal con información del estudio, áreas de práctica, proceso de trabajo y formulario de contacto.
+- [Inicio](https://estudiojurídicobarraza.com): Página principal con información del estudio, áreas de práctica, proceso de trabajo y formulario de contacto.

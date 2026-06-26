@@ -17,7 +17,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://estudiojuridicobarraza.vercel.app";
+const siteUrl = "https://estudiojurídicobarraza.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
