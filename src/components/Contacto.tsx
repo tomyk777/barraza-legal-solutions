@@ -57,7 +57,7 @@ export default function Contacto() {
                   Zona de actuación
                 </p>
                 <p className="mt-1 text-sm text-foreground/80">
-                  Mar del Plata · Tandil · Necochea · Costa Atlántica
+                  Mar del Plata · Tandil · Necochea · Lobería · Balcarce
                 </p>
               </li>
             </ul>
