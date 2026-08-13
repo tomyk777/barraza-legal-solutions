@@ -91,7 +91,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LegalService",
