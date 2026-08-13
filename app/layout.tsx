@@ -22,7 +22,7 @@ const siteUrl = "https://estudiojurídicobarraza.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Estudio Jurídico Barraza & Asociados — Abogados en Mar del Plata",
+    default: "Estudio Jurídico Barraza & Asociados — Abogados en Lobería",
     template: "%s | Estudio Jurídico Barraza & Asociados",
   },
   description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Estudio Jurídico Barraza & Asociados",
     description:
-      "Más de 20 años brindando soluciones legales en Mar del Plata, Tandil, Necochea y Balcarce.",
+      "Más de 20 años brindando soluciones legales en Mar del Plata, Tandil, Necochea, Lobería y Balcarce.",
     type: "website",
     locale: "es_AR",
     url: siteUrl,
@@ -87,9 +87,10 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "AR-B",
-    "geo.placename": "Mar del Plata",
+    "geo.placename": "Lobería",
   },
 };
+
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -103,6 +104,7 @@ const jsonLd = {
   founder: {
     "@type": "Person",
     name: "Mariano Barraza",
+    jobTitle: "Abogado — Fundador del Estudio",
   },
   areaServed: [
     { "@type": "City", name: "Mar del Plata" },
@@ -113,6 +115,8 @@ const jsonLd = {
   ],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Alem 428",
+    addressLocality: "Lobería",
     addressRegion: "Buenos Aires",
     addressCountry: "AR",
   },

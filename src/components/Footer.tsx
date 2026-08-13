@@ -61,6 +61,17 @@ export default function Footer() {
         <div className="text-sm">
           <p className="text-xs uppercase tracking-[0.2em] text-gold mb-4">Contacto</p>
           <p className="mt-2">
+            Dirección:{" "}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Alem+428,+Lober%C3%ADa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              Alem 428, Lobería
+            </a>
+          </p>
+          <p className="mt-1">
             WhatsApp:{" "}
             <a
               href={WHATSAPP}

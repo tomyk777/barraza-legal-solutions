@@ -52,6 +52,21 @@ export default function Contacto() {
                   </p>
                 </a>
               </li>
+              <li className="group relative rounded-sm border-l-2 border-navy/25 pl-4 py-2 pr-4 transition-all duration-300 hover:border-navy hover:bg-navy/5 hover:translate-x-1">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Alem+428,+Lober%C3%ADa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <p className="text-xs uppercase tracking-[0.2em] text-navy-deep font-semibold transition-colors duration-300">
+                    Dirección
+                  </p>
+                  <p className="font-display text-xl text-navy-deep mt-1 transition-colors duration-300 group-hover:text-navy-soft">
+                    Alem 428, Lobería
+                  </p>
+                </a>
+              </li>
               <li className="relative rounded-sm border-l-2 border-navy/25 pl-4 py-2 pr-4 transition-all duration-300">
                 <p className="text-xs uppercase tracking-[0.2em] text-navy-deep font-semibold">
                   Zona de actuación
